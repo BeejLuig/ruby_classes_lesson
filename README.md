@@ -14,7 +14,7 @@
 - conditionals (if/else)
 - operators (+, -, +=, -=, *)
 - methods/method creation
-- loops
+- objects
 
 ---
 
