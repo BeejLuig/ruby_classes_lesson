@@ -22,7 +22,7 @@
 
 ---
 
-A small town is being ravaged by an evil dragon. A brave hero is needed to save the day, but there is a problem...he/she doesn't exist yet!
+A small town is being ravaged by an evil dragon. A brave hero is needed to save the day, but there is a problem...he/she doesn't exist yet! It is our job to create the perfect hero and restore peace to the land.
 
 To build our hero, we are going to create a Ruby class. The [Ruby docs](https://ruby-doc.org/core-2.2.0/Class.html) describe classes like so:
 
@@ -87,6 +87,8 @@ NoMethodError: undefined method `health'
 
 ### Attribute Readers
 
+---
+
 Wait, what happened? Everything was going so smoothly! Well, let's think about this. Our instance variables are accessible to our `bob` object, but calling `bob.health` is outside of that scope. In order to access instance variables, we need to wrap our variables in **attribute reader** methods.
 
 ```ruby
@@ -137,6 +139,8 @@ So much cleaner! Now let's think of another scenario involving these instance va
 
 ### Attribute Writers
 
+---
+
 Sure, we could add strength as an argument on `initialize`, but for the sake of the story, let's say that's out of the question. Our alternative is to create an **attribute writer** method. It will look like this:
 
 ```ruby
@@ -178,6 +182,8 @@ end
 
 ### Attribute Accessors
 
+---
+
 We can consolidate even further for any variables that we want both an attribute reader and writer for. The method to do both is `attr_accessor`. We can use that for our `@strength` instance variable.
 
 ```ruby
@@ -198,6 +204,8 @@ Just a note, we still need to create instance variable definitions within the `i
 ---
 
 ### Instance Methods
+
+---
 
 Now that we have all of the attributes we need in a good hero, it's time to fight the dragon! Let's build a method to do it:
 
