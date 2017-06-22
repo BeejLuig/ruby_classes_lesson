@@ -59,6 +59,8 @@ bob.class
 
 ### Instance Variables
 
+---
+
 Now that we have our `Hero` blueprint, we need to fill it with some attributes! Let's pick a few things any good dragon-slaying hero needs: `name`, `strength`, and `health`.
 
 In order to assign these attributes to **instance variables** that each new hero object can access, we are going to utilize the magic `initialize` method that [gets called every time a new object is created](http://ruby-doc.org/docs/ruby-doc-bundle/UsersGuide/rg/objinitialization.html).
