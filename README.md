@@ -47,7 +47,9 @@ bob = Hero.new
 ```
 What we are building here is the blueprint of a `Hero`. Inside of this class definition, we want to create all of the attributes and abilities (methods) that we would expect a hero to have. When we call `Hero.new`, we are passing all of those attributes and abilities over to our new `Hero` object!
 
-###Instance Variables
+---
+
+### Instance Variables
 
 Now that we have our `Hero` blueprint, we need to fill it with some attributes! Let's pick a few things any good dragon-slaying hero needs: `name`, `strength`, and `health`.
 
@@ -79,6 +81,7 @@ Cool! We can see the reference to our new hero, Bob, with all of his attributes.
 bob.health
 NoMethodError: undefined method `health'
 ```
+---
 
 ### Attribute Readers
 
@@ -128,6 +131,8 @@ end
 
 So much cleaner! Now let's think of another scenario involving these instance variables. Right now, our default `@strength` value gets assigned to 5 on creation. What if we want to create a hero with a little more muscle?
 
+---
+
 ### Attribute Writers
 
 Sure, we could add strength as an argument on `initialize`, but for the sake of the story, let's say that's out of the question. Our alternative is to create an **attribute writer** method. It will look like this:
@@ -167,7 +172,9 @@ class Hero
 end
 ```
 
-### Attribute Accessor
+---
+
+### Attribute Accessors
 
 We can consolidate even further for any variables that we want both an attribute reader and writer for. The method to do both is `attr_accessor`. We can use that for our `@strength` instance variable.
 
@@ -185,6 +192,8 @@ end
 ```
 
 Just a note, we still need to create instance variable definitions within the `initialize` function if we want that for our class. Ruby isn't going to do *everything* for us.
+
+---
 
 ### Instance Methods
 
