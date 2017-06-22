@@ -28,7 +28,7 @@ To build our hero, we are going to create a Ruby class. The [Ruby docs](https://
 
 > Classes in Ruby are first-class objects...When a new class is created, an object of type Class is initialized and assigned to a global constant.
 
-Everything in Ruby is an object. In order to create a new "hero" object of type Class, we use this constructor:
+Everything in Ruby is an object ([Almost](http://rubylearning.com/blog/2010/09/27/almost-everything-is-an-object-and-everything-is-almost-an-object/)). In order to create a new "hero" object of type Class, we use this syntax:
 
 ```ruby
 class Hero
@@ -48,6 +48,12 @@ end
 bob = Hero.new
 ```
 What we are building here is the blueprint of a `Hero`. Inside of this class definition, we want to create all of the attributes and abilities (methods) that we would expect a hero to have. When we call `Hero.new`, we are passing all of those attributes and abilities over to our new `Hero` object!
+
+```ruby
+#What is bob's class?
+bob.class
+#=> Hero 
+```
 
 ---
 
