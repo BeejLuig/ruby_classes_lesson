@@ -20,6 +20,8 @@
 
 ### Class Construction
 
+---
+
 A small town is being ravaged by an evil dragon. A brave hero is needed to save the day, but there is a problem...he/she doesn't exist yet!
 
 To build our hero, we are going to create a Ruby class. The [Ruby docs](https://ruby-doc.org/core-2.2.0/Class.html) describe classes like so:
